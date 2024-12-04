@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>MOVIE RECOMMENDATION SYSTEM</title>
+    <center><h1 class="text-light display-4 mt-50" style="font-size:50px">MOVIE RECOMMENDATION SYSTEM</h1></center>
+    <style>
+        .bg-nav{
+            background:#00d9ff;
+            background: -webkit-linear-gradient(to right,#020e1d,#00d9ff);
+            background: linear-gradient(to right,#020e1d,#00d9ff);
+            color:#ffffff;
+
+
+        }
+        .mt-50{
+            margin-top:50px;
+        }
+        label{
+          font-size: 30px;
+        }
+        </style>
+</head>
+<body class=" bg-nav">
+    
+    <img src="{{url_for('static',filename='bg.jpg')}}" width="100%">
+<div class="container">
+    
+           
+
+       <center>
+           <div class="card-body">
+               <form class="form" action="/" method="POST" >
+                   <label>Enter the age group to which you belong</label><br>
+                   <input type="radio" id="below16" name="age" value="1">
+                   <label for="below16">Below 16</label><br>
+                   <input type="radio" id="above16" name="age" value="2">
+                   <label for="above16">Above 16</label><br><br><br><br>
+                   <label>Enter the name of the movie you want recommendation for</label><br><br>
+                   <input type="text" name="movie" class="form-control" required><br><br><br>
+                   <input type="submit" class="btn btn-primary btn-block btn-lg" value="Go">
+               </form>
+           </div>
+       </center>
+   
+</div>
+
+    
+</body>
